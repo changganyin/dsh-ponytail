@@ -1,0 +1,10 @@
+node_modules/
+coverage/
+*.log
+
+# Local AI/Trellis workflow state
+.agents/
+.pi/
+.trellis/
+AGENTS.md
+.gitattributes

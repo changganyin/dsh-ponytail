@@ -1,0 +1,28 @@
+{
+  "name": "dsh-ponytail",
+  "version": "0.1.0",
+  "description": "Ponytail-inspired full-mode guidance for DeepSeek Harness",
+  "type": "module",
+  "main": "./index.js",
+  "exports": "./index.js",
+  "files": [
+    "index.js",
+    "instructions.js",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "ponytail"
+  ],
+  "license": "MIT",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
