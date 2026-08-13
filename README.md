@@ -4,22 +4,16 @@ Standalone Ponytail-inspired `full`-mode guidance for [DeepSeek Harness](https:/
 
 ## Install
 
-Install published package:
+Install from GitHub into DSH's `web` profile:
 
 ```sh
-dsh plugin --profile <profile> add dsh-ponytail
-```
-
-Install local checkout while developing:
-
-```sh
-dsh plugin --profile <profile> add /absolute/path/to/dsh-ponytail
+dsh plugin --profile web add github:changganyin/dsh-ponytail
 ```
 
 Verify bundle layer:
 
 ```sh
-dsh --profile <profile> --dump-config
+dsh --profile web --dump-config
 ```
 
 `dsh-ponytail` adds `policy:ponytail` to DSH system prompt. Restart or remount DSH after installation.
@@ -27,7 +21,7 @@ dsh --profile <profile> --dump-config
 ## Remove
 
 ```sh
-dsh plugin --profile <profile> remove dsh-ponytail
+dsh plugin --profile web remove dsh-ponytail
 ```
 
 ## Compatibility
