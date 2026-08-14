@@ -1,6 +1,6 @@
 # dsh-ponytail
 
-Standalone Ponytail-inspired `full`-mode guidance for [DeepSeek Harness](https://github.com/deepseek-harness/deepseek-harness).
+Standalone fixed canonical Ponytail `full` policy for [DeepSeek Harness](https://github.com/deepseek-harness/deepseek-harness).
 
 ## Install
 
@@ -16,7 +16,7 @@ Verify bundle layer:
 dsh --profile web --dump-config
 ```
 
-`dsh-ponytail` adds `policy:ponytail` to DSH system prompt. Restart or remount DSH after installation.
+`dsh-ponytail` adds `policy:ponytail` to every assembled DSH system prompt. Restart or remount DSH after installation.
 
 ## Remove
 
@@ -26,8 +26,10 @@ dsh plugin --profile web remove dsh-ponytail
 
 ## Compatibility
 
-Target: DeepSeek Harness `0.1.0-rc.5`. Validate against current DSH release before publishing.
+Validated: DeepSeek Harness `0.1.0-rc.6`. Validate against later releases before publishing.
 
 ## Scope
 
-This package is standalone: no Ponytail package, source checkout, release, or runtime dependency is required. It supplies fixed `full` guidance only—no mode switch, commands, UI, or skills.
+Policy text is complete, pinned canonical Ponytail `full` behavior, including its persistence wording, ladder, rules, output discipline, safety guidance, and full-only intensity example.
+
+Package is standalone: no Ponytail package, source checkout, release, or runtime dependency is required. DSH integration remains fixed `full`: it implements no mode switching, off command, UI/status, review mode, or skills command. Canonical references to switching or stopping Ponytail remain policy text, not DSH controls.
